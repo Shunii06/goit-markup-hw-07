@@ -26,12 +26,12 @@ body {
     margin: 0;
     padding: 0;
 }
-@media (min-width="320px") {
+@media (min-width:319px){
     body {
-        overflow-x: hidden;
-            
+            overflow-x: hidden;
     }
 }
+
 h1,
 h2,
 h3,
@@ -123,7 +123,24 @@ a {
     align-items: center;
     justify-content: space-between;
 }
-
+.main-link-top {
+    color: var(--cloud);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+.web-txt-top {
+    color: var(--iris);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.16;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
 .nav-margin {
     display: flex;
     gap: 80px;
@@ -200,7 +217,7 @@ a {
     font-weight: 400;
     transition: var(--tr-duration) var(--tr-function);    
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 .adress-box{
     flex-direction: column;
     gap: 12px;
@@ -220,7 +237,7 @@ a {
     border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
@@ -252,7 +269,7 @@ a {
     outline: none;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
@@ -379,7 +396,7 @@ a {
     text-align: center;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -390,7 +407,7 @@ a {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .hero-image {
         padding-bottom: 112px;
         padding-top: 112px;
@@ -399,7 +416,7 @@ a {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .hero-image {
         padding-bottom: 188px;
         padding-top: 188px;
@@ -419,7 +436,7 @@ a {
     margin: auto;
     margin-bottom: 72px;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 .hero-text {
     font-size: 56px;
     letter-spacing: 1.12px;
@@ -428,7 +445,7 @@ a {
     margin-bottom: 36px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .hero-text {
         margin-bottom: 48px;
 }
@@ -487,7 +504,7 @@ a {
     letter-spacing: 0.72px;
     margin: 8px 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .main-site-feature li{
         max-width: 356px;
     }
@@ -555,7 +572,7 @@ a {
     max-width: 1440px;
 }
 .h2-main-page {
-    padding: 96px 0 72px 0;
+    padding: 0 0 72px 0;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -564,7 +581,6 @@ a {
 }
 .team {
     display: flex;
-    padding-bottom: 120px;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
@@ -645,7 +661,7 @@ row-gap: 64px;
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
     .feature-icon {
         display: none;
     }
@@ -777,15 +793,16 @@ color: var(--slate);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 72px;
         column-gap: 24px;
 }
-@media screen and (min-width: 1200px) {
+/*
+@media (min-width: 1200px) {
     .footer-box-text {
         column-gap: 80px;
     }
-}
+}*/
 .main-link-bottom {
+    display: flex;
     color: var(--cloud);
     font-family: Raleway;
     font-size: 18px;
@@ -793,6 +810,7 @@ color: var(--slate);
     line-height: 1.16;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    justify-content: center;
 }
 .web-txt {
     color: var(--iris);
@@ -811,16 +829,11 @@ color: var(--slate);
         letter-spacing: 0.32px;
         width: 264px;
         margin-top: 17.5px;
+        margin-bottom: 72px;
     }
 
-@media screen and (min-width: 768px) {
-    .footer-logo {
-        text-align: left;
-    }
-}
 
-.footer-box-social {
-}
+
 .footer-socials {
 color: var(--white);
 
@@ -833,6 +846,7 @@ color: var(--white);
         gap: 16px;
         margin-top: 16px;
         justify-content: center;
+        margin-bottom: 72px;
 }
 
 .bg-footer-svg {
@@ -846,19 +860,27 @@ color: var(--white);
 }
 
 .newsletter-box {
-    width: 100%;
-    
+    width: 100%;  
 }
-
-.newsletter-text {
+.subscribe-label-wrapper {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
 }
 .newsletter-email-label {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    flex-direction: column;
+        color: var(--white);
+            text-align: center;
+            margin-bottom: 16px
 }
 .newsletter-email-input {
+    width: 100%;
+    height: 40px;
     color: var(--white);
     background-color: transparent;
     border-radius: 4px;
@@ -868,9 +890,11 @@ color: var(--white);
             font-weight: 400;
             line-height: 2;
             letter-spacing: 0.48px;
+            opacity: 0.3;
 }
 .newsletter-email-input::placeholder {
     color: var(--white);
+    padding-left: 16px;
 }
 .footer-button {
         letter-spacing: 0.64px;
@@ -882,10 +906,58 @@ color: var(--white);
     border: none;
     border-radius: 4px;
     background-color: var(--iris);
+    margin-bottom: 92px;
 }
 .footer-subscribe-button-arrow {
     fill: var(--white);
 }
+
+@media(min-width: 768px) {
+
+.main-link-bottom {
+    justify-content: left;
+}
+.footer-socials {
+    display: flex;
+    justify-content: left;
+}
+.newsletter-box {
+    display: block;
+    gap: 24px;
+    width: auto;
+}
+.newsletter-email-input {
+    width: 264px;
+}
+.subscribe-label-wrapper {
+    padding: 0;
+    justify-content: left;
+    padding-bottom: 16px;
+
+}
+.footer-button
+{
+    margin-top: 40px;
+    margin-right: 40px;
+}
+}
+
+@media (min-width: 1200px) {
+    .footer-box-text {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        column-gap: 0;
+    }
+        .site-descrip {
+            margin-right: 120px;
+        }
+        .footer-box-social {
+            margin-right: 80px;
+        }
+        .newsletter-box {
+            margin-right: 24px;
+        }
+    }
 
 
 
@@ -909,11 +981,16 @@ color: var(--white);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 408px;
+    width: 392px;
     height: 584px;
     border-radius: 4px;
     background-color: var(--dairy);
 }
+@media(min-width: 768px) {
+    .modal-body {
+        width: 408px;
+    }}
+
 .close-button {
     position: absolute;
     top: 24px;
