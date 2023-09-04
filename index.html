@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="Homework One" content="goit-markup-hw-01" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -14,12 +14,12 @@
     />
   </head>
   <body>
-    <header class="container allignement">
+    <header class="border-header">
       <div class="container header-box">
-        <a href="./index.html" class="main-link"
-          ><span class="main-link-bottom web-txt">WEB</span>STUDIO</a
-        >
         <nav class="nav-margin">
+          <a href="./index.html" class="main-link"
+            ><span class="main-link-bottom web-txt">WEB</span>STUDIO</a
+          >
           <ul class="navigation-row">
             <li class="active">
               <a href="index.html" class="onsite-navi current">Studio</a>
@@ -32,7 +32,7 @@
             </li>
           </ul>
         </nav>
-        <address class="adress-margin">
+        <address>
           <ul class="adress-box">
             <li>
               <a href="mailto:info@devstudio.com" class="contactinfo">
@@ -46,100 +46,105 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <div class="hamburger-icon">
+            <svg width="32px" height="22px">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </div>
+        </button>
       </div>
     </header>
     <main>
-      <div class="container hero-background">
-        <h1 class="container hero-text">
-          Effective Solutions for Your Buisness
-        </h1>
-        <div class="button-middle">
+      <section class="section hero-image">
+        <div class="container">
+          <h1 class="hero-text">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
           </button>
         </div>
-      </div>
-      <div class="container">
-        <ul class="features-in-row">
-          <li class="main-site-feature">
-            <a href="#0">
-              <svg width="264" height="112">
+      </section>
+      <section class="section">
+        <div class="container">
+          <ul class="main-site-feature">
+            <li>
+              <svg class="feature-icon" width="264" height="112">
                 <use href="./images/icons.svg#icon-Anthena"></use>
               </svg>
-            </a>
-            <h3 class="main-site-feature-topic">Strategy</h3>
-            <p class="main-site-feature-descr">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
-          <li class="main-site-feature">
-            <a href="#0">
-              <svg width="264" height="112">
+              <h3 class="main-site-feature-topic">Strategy</h3>
+              <p class="main-site-feature-descr">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
+            <li>
+              <svg class="feature-icon" width="264" height="112">
                 <use href="./images/icons.svg#icon-Clock"></use>
               </svg>
-            </a>
-            <h3 class="main-site-feature-topic">Punctuality</h3>
-            <p class="main-site-feature-descr">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li class="main-site-feature">
-            <a href="#0">
-              <svg width="264" height="112">
+              <h3 class="main-site-feature-topic">Punctuality</h3>
+              <p class="main-site-feature-descr">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <svg class="feature-icon" width="264" height="112">
                 <use href="./images/icons.svg#icon-Computer"></use>
               </svg>
-            </a>
-            <h3 class="main-site-feature-topic">Dilligence</h3>
-            <p class="main-site-feature-descr">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li class="main-site-feature">
-            <a href="#0">
-              <svg width="264" height="112">
+              <h3 class="main-site-feature-topic">Dilligence</h3>
+              <p class="main-site-feature-descr">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <svg class="feature-icon" width="264" height="112">
                 <use href="./images/icons.svg#icon-Astronaut"></use>
               </svg>
-            </a>
-            <h3 class="main-site-feature-topic">Technologies</h3>
-            <p class="main-site-feature-descr">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-        <h2 class="h2-main-page">What Are We Doing</h2>
-        <ul class="imgs-box">
-          <li>
-            <img
-              src="images/comp.jpg"
-              alt="computer with charts on it"
-              width="360"
-              height="300"
-            />
-          </li>
-          <li>
-            <img
-              src="images/phone.jpg"
-              alt="smartphone viewing many aps on it"
-              width="360"
-              height="300"
-            />
-          </li>
-          <li>
-            <img
-              src="images/hand.jpg"
-              alt="hand holding phone connected remotely to laptop in the background"
-              width="360"
-              height="300"
-            />
-          </li>
-        </ul>
-      </div>
+              <h3 class="main-site-feature-topic">Technologies</h3>
+              <p class="main-site-feature-descr">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <h2 class="h2-main-page">What Are We Doing</h2>
+          <ul class="imgs-box">
+            <li>
+              <img
+                src="images/comp.jpg"
+                alt="computer with charts on it"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="images/phone.jpg"
+                alt="smartphone viewing many aps on it"
+                width="360"
+                height="300"
+              />
+            </li>
+            <li>
+              <img
+                src="images/hand.jpg"
+                alt="hand holding phone connected remotely to laptop in the background"
+                width="360"
+                height="300"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="container background-cloud">
         <h2 class="h2-main-page">Our Team</h2>
         <ul class="team">
@@ -297,50 +302,52 @@
           </li>
         </ul>
       </section>
-      <div class="container customers-class">
-        <h2 class="h2-main-page">Customers</h2>
-        <ul class="customers-logo">
-          <li>
-            <a href="#0">
-              <svg class="svg-border" width="168" height="88">
-                <use href="./images/icons.svg#icon-Client-1"></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="#0">
-              <svg class="svg-border" width="168" height="88">
-                <use href="./images/icons.svg#icon-Client-2"></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="#0">
-              <svg class="svg-border" width="168" height="88">
-                <use href="./images/icons.svg#icon-Client-3"></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="#0">
-              <svg class="svg-border" width="168" height="88">
-                <use href="./images/icons.svg#icon-Client-4"></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="#0">
-              <svg class="svg-border" width="168" height="88">
-                <use href="./images/icons.svg#icon-Client-5"></use></svg
-            ></a>
-          </li>
-          <li>
-            <a href="#0">
-              <svg class="svg-border" width="168" height="88">
-                <use href="./images/icons.svg#icon-Client-6"></use></svg
-            ></a>
-          </li>
-        </ul>
-      </div>
+      <section class="section">
+        <div class="container customers-class">
+          <h2 class="h2-main-page">Customers</h2>
+          <ul class="customers-logo">
+            <li>
+              <a href="#0">
+                <svg class="svg-border" width="168" height="88">
+                  <use href="./images/icons.svg#icon-Client-1"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#0">
+                <svg class="svg-border" width="168" height="88">
+                  <use href="./images/icons.svg#icon-Client-2"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#0">
+                <svg class="svg-border" width="168" height="88">
+                  <use href="./images/icons.svg#icon-Client-3"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#0">
+                <svg class="svg-border" width="168" height="88">
+                  <use href="./images/icons.svg#icon-Client-4"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#0">
+                <svg class="svg-border" width="168" height="88">
+                  <use href="./images/icons.svg#icon-Client-5"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#0">
+                <svg class="svg-border" width="168" height="88">
+                  <use href="./images/icons.svg#icon-Client-6"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="container background-dark-bottom">
-      <div class="footer-box-text">
+    <footer class="background-dark-bottom">
+      <div class="container footer-box-text">
         <a href="./index.html" class="main-link-bottom">
           <span class="main-link-bottom web-txt">WEB</span>STUDIO</a
         >
@@ -405,6 +412,64 @@
         </form>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="8px" height="8px">
+          <use href="./images/icons.svg#icon-close-black-x"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-wrapper">
+        <ul class="mobile-menu">
+          <li><a href="./index.html" class="link mobile-active">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+        <div class="mobile-contacts">
+          <ul>
+            <li>
+              <a href="tel:+110001111111" class="mobile-tel"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-icons">
+            <li>
+              <a href="" class="social-icon-mobile">
+                <svg width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-InstagramF"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-icon-mobile">
+                <svg width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-TwitterF"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-icon-mobile">
+                <svg width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-FacebookF"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-icon-mobile">
+                <svg width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-LinkedF"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-body">
         <button type="button" class="close-button" data-modal-close>
@@ -488,5 +553,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
